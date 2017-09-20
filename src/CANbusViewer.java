@@ -247,7 +247,7 @@ public class CANbusViewer extends javax.swing.JFrame implements CANMessageListen
         monitorTable = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("CANbustinViewer_MIA_ToolsBox");
+        setTitle("CANbusViewer_MIA_ToolsBox");
 
         serialPort.setEditable(true);
         serialPort.setModel(new javax.swing.DefaultComboBoxModel(SerialPortList.getPortNames()));
