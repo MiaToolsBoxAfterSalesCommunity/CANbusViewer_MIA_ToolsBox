@@ -25,7 +25,7 @@
 
     <target name="compile">
         <mkdir dir="${build}"/>
-        <javac srcdir="${src}" destdir="${build}" includeantruntime="false" bootclasspath="C:/Tools/Java/jre1.8.0_141/lib/rt.jar">
+        <javac srcdir="${src}" destdir="${build}" includeantruntime="false" bootclasspath="C:\\Tools\\Java\\jre1.8.0_141\\lib\\rt.jar">
             <classpath refid="project.class.path"/>
         </javac>
         <copy todir="build/res">
@@ -34,7 +34,7 @@
     </target>
 
     <target name="run" depends="compile">
-        <java classname="USBtinViewer" fork="true">
+        <java classname="CANbusViewer" fork="true">
             <classpath refid="project.class.path"/>
         </java>
     </target>
@@ -49,9 +49,9 @@
 
     <target name="jar" depends="compile">
         <mkdir dir="${dist.dir}"/>
-        <jar destfile="${dist.dir}/USBtinViewer.jar" basedir="${build}">
+        <jar destfile="${dist.dir}/CANbusViewer.jar" basedir="${build}">
             <manifest>
-                <attribute name="Main-Class" value="USBtinViewer"/>
+                <attribute name="Main-Class" value="CANbusViewer"/>
             </manifest>
             <zipfileset src="lib/jssc-2.8.0.jar"/>
             <zipfileset src="lib/USBtinLib-1.2.0.jar"/>

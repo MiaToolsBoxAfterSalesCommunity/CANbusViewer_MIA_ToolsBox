@@ -41,7 +41,7 @@ import static java.awt.Toolkit.getDefaultToolkit;
 import static java.lang.System.getProperty;
 
 /**
- * Main window frame for USBtinViewer
+ * Main window frame for CANbusViewer
  * 
  * @author Thomas Fischl
  */
@@ -551,7 +551,7 @@ public class CANbusViewer extends javax.swing.JFrame implements CANMessageListen
     }//GEN-LAST:event_sendMessageActionPerformed
 
     /**
-     * Entry point of USBtinViewer application
+     * Entry point of CANbusViewer application
      * 
      * @param args The command line arguments
      */

@@ -55,8 +55,8 @@ public class MonitorMessageTableModel implements TableModel {
         icons = new ImageIcon[]{
             new ImageIcon(getClass().getResource("/res/icons/info.png")),
             new ImageIcon(getClass().getResource("/res/icons/error.png")),
-            new ImageIcon(getClass().getResource("/res//icons/receive.png")),
-            new ImageIcon(getClass().getResource("/res//icons/send.png"))
+            new ImageIcon(getClass().getResource("/res/icons/receive.png")),
+            new ImageIcon(getClass().getResource("/res/icons/send.png"))
         };
     }
 
